@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.10
 LABEL maintainer="martin+docker@x8x.at"
 
 ENV COMPOSER_HOME /tmp/composer
