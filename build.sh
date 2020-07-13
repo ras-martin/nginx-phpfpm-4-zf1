@@ -9,6 +9,7 @@ usage() {
   >&2 echo ""
   >&2 echo "Available distros:"
   >&2 echo "    alpine-3.10:amd64 ..... Alpine Linux v3.10, architecture amd64: uses PHP 7.3, Nginx 1.16"
+  >&2 echo "    alpine-3.12:amd64 ..... Alpine Linux v3.10, architecture amd64: uses PHP 7.3.20, Nginx 1.18"
   exit 1
 }
 
@@ -35,6 +36,7 @@ build() {
 
 case "$1" in
   alpine-3.10:amd64) build "alpine-3.10:amd64" ;;
-  all) build "alpine-3.10:amd64" ;;
+  alpine-3.12:amd64) build "alpine-3.12:amd64" ;;
+  all) build "alpine-3.10:amd64 alpine-3.12:amd64" ;;
   *) usage ;;
 esac

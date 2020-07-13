@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ALPINE_VERSION="v3.10"
+ALPINE_VERSION="v3.12"
 CURRENT_PHP_VERSION=`cat CURRENT_PHP_VERSION`
 TMP_DIR=tmp_alpine_phpversion_check
 
